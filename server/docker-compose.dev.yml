@@ -1,0 +1,27 @@
+services:
+  db:
+    image: bitnami/postgresql:latest
+    container_name: brevly-db-dev
+    restart: unless-stopped
+    ports:
+      - '$POSTGRES_PORT:$POSTGRES_PORT'
+    environment:
+      - POSTGRES_USER=$POSTGRES_USER
+      - POSTGRES_PASSWORD=$POSTGRES_PASSWORD
+      - POSTGRES_DB=$POSTGRES_DB
+    volumes:
+      - './docker:/docker-entrypoint-initdb.d'
+    networks:
+      - brevly
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U postgres']
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  db:
+
+networks:
+  brevly:
+    driver: bridge
