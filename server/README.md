@@ -54,7 +54,7 @@ pnpm db:up:dev
 ### 4. Rode as migrations de desenvolvimento
 
 ```bash
-pnpm db:migration:dev
+pnpm db:migrate:dev
 ```
 
 ### 5. Rode em modo desenvolvimento
