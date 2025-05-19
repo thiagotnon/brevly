@@ -43,6 +43,8 @@ POSTGRES_DB=postgres
 POSTGRES_PORT=5432
 ```
 
+> Certifique-se de inserir corretamente a URL do postgres do seu Docker tanto em `development` quanto para `production`, verificando as credenciais utilizadas.
+
 ### 3. Suba o banco de dados
 
 ```bash
