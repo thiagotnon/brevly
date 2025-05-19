@@ -25,7 +25,7 @@ pnpm install
 ### 2. Configure o arquivo `.env`
 
 ```env
-VITE_FRONTEND_URL=http://localhost:5173 # Verifique em qual porta a sua aplicação será executada
+VITE_FRONTEND_URL=http://localhost:5173
 VITE_BACKEND_URL= http://localhost:3333/api/v1
 ```
 
