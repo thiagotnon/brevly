@@ -24,7 +24,7 @@ API para encurtamento de links, construída com Fastify, PostgreSQL e Drizzle OR
 pnpm install
 ```
 
-### 2. Configure o `.env` local
+### 2. Configure o `.env.local`
 
 ```env
 PORT=3333
