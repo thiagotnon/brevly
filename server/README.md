@@ -46,7 +46,7 @@ POSTGRES_PORT=5432
 ### 3. Suba o banco de dados
 
 ```bash
-pnpm db:up
+pnpm db:up:dev
 ```
 
 > Isso usa `docker-compose.dev.yml` que está nesta pasta.

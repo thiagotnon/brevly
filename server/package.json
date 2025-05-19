@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "tsx watch --env-file .env.local src/infra/http/server.ts",
     "test": "dotenv -e .env.test -- vitest run",
-    "db:up": "docker compose -f docker-compose.dev.yml up -d",
-    "db:down": "docker compose -f docker-compose.dev.yml down",
+    "db:up:dev": "docker compose --env-file .env.local -f docker-compose.dev.yml up -d",
+    "db:down:dev": "docker compose --env-file .env.local -f docker-compose.dev.yml down",
     "test:watch": "dotenv -e .env.test -- vitest watch",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
