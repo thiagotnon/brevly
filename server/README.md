@@ -27,8 +27,20 @@ pnpm install
 ### 2. Configure o `.env` local
 
 ```env
-DATABASE_URL=postgres://postgres:postgres@localhost:5432/brevly
 PORT=3333
+NODE_ENV=development
+DATABASE_URL=postgres://postgres:postgres@localhost:5432/postgres
+
+CLOUDFLARE_ACCOUNT_ID=#
+CLOUDFLARE_ACCESS_KEY_ID=#
+CLOUDFLARE_SECRET_ACCESS_KEY=#
+CLOUDFLARE_BUCKET=#
+CLOUDFLARE_PUBLIC_URL=http://localhost
+
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=postgres
+POSTGRES_DB=postgres
+POSTGRES_PORT=5432
 ```
 
 ### 3. Suba o banco de dados
